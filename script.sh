@@ -13,7 +13,7 @@
 #SBATCH --gpus=1
 
 # Job Commands Below
-!pip install unsloth vllm
-!pip install --upgrade pillow
+#installing conda
+bash Anaconda-latest-Linux-x86_64.sh
 echo "Hello from $(hostname)"
 python3 finetuning.py
