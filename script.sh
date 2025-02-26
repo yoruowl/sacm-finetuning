@@ -9,8 +9,8 @@
 #SBATCH --output=llm_finetuning.out             #Output file name
 #SBATCH --error=llm_finetuning.err              #Error file name
 #SBATCH --mail-type=END                         #Email notification type (BEGIN, END, FAIL, ALL). To have multiple use a comma separated list. i.e END,FAIL.
-#SBATCH partition=GPU
-#SBATCH gpus=1
+#SBATCH --partition=GPU
+#SBATCH --gpus=1
 
 # Job Commands Below
 !pip install unsloth vllm
