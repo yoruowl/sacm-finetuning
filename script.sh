@@ -14,6 +14,9 @@
 
 # Job Commands Below
 #installing conda
+
 bash Anaconda-latest-Linux-x86_64.sh
-echo "Hello from $(hostname)"
+conda env create -f unsloth.yml
+conda activate unsloth_env
+conda env list
 python3 finetuning.py
